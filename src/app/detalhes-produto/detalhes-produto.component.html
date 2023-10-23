@@ -1,0 +1,50 @@
+<div class="detalhes-produto-container">
+  <!-- Submenu continua aqui -->
+  <div class="duas-colunas" *ngIf="produto">
+    <!-- Coluna da imagem do produto -->
+    <div class="coluna-imagem">
+      <img [src]="produto.imagem" alt="{{ produto.nome }}" class="imagem-produto">
+      
+      <div class="descricao">
+        <h1 class="label">Conheça Mais</h1>
+        <p>{{produto.descricao}}</p>
+      </div>
+    </div>
+    <!-- Coluna com nome do produto e preço -->
+    <div class="coluna-info">
+      <h1>{{ produto.nome }}</h1>
+      <h2>Por: R$ {{ produto.preco }}</h2>
+      <p *ngIf="!produto.estoque" class="estoque-indisponivel">Produto fora de Estoque!</p>    
+    </div>
+  </div>
+  <div class="duas-colunas" *ngIf="produto">
+    <!-- Primeira coluna com informações adicionais -->
+    <div class="coluna-informacoes">
+  
+      <h2>Informações Adicionais</h2>
+      <ul>
+        <li *ngIf="produto.infoPeso">
+          <span class="label">Peso:</span>{{ produto.infoPeso }}
+        </li>
+        <li *ngIf="produto.composicao">
+          <span class="label">Composição:</span> {{ produto.composicao }}
+        </li>
+        <li *ngIf="produto.comoUsar">
+          <span class="label">Como Usar:</span> {{ produto.comoUsar }}
+        </li>
+      </ul>
+    </div>
+    <!-- Segunda coluna com informações adicionais -->
+    <div class="coluna-informacoes">
+      <br><br><br>
+      <ul>
+        <li *ngIf="produto.tipo_de_produto">
+          <span class="label">Tipo de Produto:</span> {{ produto.tipo_de_produto }}
+        </li>
+        <li *ngIf="produto.indicacao">
+          <span class="label">Indicação:</span> {{ produto.indicacao }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

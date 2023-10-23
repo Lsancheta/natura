@@ -1,0 +1,157 @@
+<!-- Logo mas so com nome -->
+<div class="marca">
+    <h1>Natura In Loco</h1>
+ </div>
+<!-- Banner rotativo -->
+ <div class="banner">
+    <img *ngFor="let imagem of imagensBanner; let i =  index"
+         [src]="imagem" [alt]="'Imagem ' + (i + 1)"
+         [class.active]="i === imagemAtualIndex || i === 0" class="">
+</div>
+<!-- Quadradinhos sobre as vantagens -->
+<div class="vantagens">
+    <h2>As Vantagens da Boa Alimentação</h2>
+    <div class="quadros">
+        <div class="quadro">
+            <h3>Mais Energia</h3>
+            <p>A alimentação saudável fornece todos os nutrientes para o bom funcionamento do corpo, alem de garantir energia e disposição suficiente para realizar as atividades do dia e para a prática de atividade física.</p>
+        </div>
+        <div class="quadro">
+            <h3>Previne Doenças Infeccionas</h3>
+            <p>É capaz de promover a melhora da função do sistema imunológico, ajudando a prevenir o desenvolvimento de doenças e combater infecções de forma mais eficaz.</p>
+        </div>
+        <div class="quadro">
+            <h3>Diminuir o risco de Doenças Crônicas</h3>
+            <p>Pode ajudar a regular os níveis de colesterol e de açúcar no sangue, prevenindo o desenvolvimento de doenças cardíacas e diabetes, por exemplo.</p>
+        </div>
+        <div class="quadro">
+            <h3>Promover o crescimento e a renovação dos tecidos</h3>
+            <p>A alimentação desempenha papel essencial no desenvolvimento da criança e no processo de ganho de massa muscular e no emagrecimento, já que ajuda promovendo o crescimento e a renovação dos tecidos, principalmente dos ossos, pele e músculos.</p>
+        </div>
+        <div class="quadro">
+            <h3>Melhora a Concentração</h3>
+            <p>As vitaminas e minerais que devem fazer parte de uma alimentação saudável ajudam a promover o bom funcionamento do sistema nervoso, melhorando a concentração, a memória e o rendimento.</p>
+        </div>
+        <div class="quadro">
+            <h3>Regula a Produção de Hormônios</h3>
+            <p>A alimentação saudável é rica em nutrientes que participam da regulação da produção de hormônios essenciais para o bom funcionamento do corpo, prevenindo alterações na tireoide e relacionadas com a fertilidade</p>
+        </div>
+        <div class="quadro">
+            <h3>Previne o Envelhecimento Precoce</h3>
+            <p>A alimentação saudável e rica em antioxidantes ajuda a combater os radicais livres no organismo, contribuindo para melhorar o aspecto da pele e atrasando o aparecimento dos sinais de envelhecimento.</p>
+        </div>
+        <div class="quadro">
+            <h3>Melhora a Qualidade do Sono</h3>
+            <p>Alguns alimentos que podem ser incluídos na alimentação saudável do dia a dia podem ajudar a aumentar a produção de melanina, o que influencia diretamente na qualidade do sono.</p>
+        </div>
+    </div>
+</div>
+<!-- vantagens dos exercicios-->
+<div class="vantagens">
+    <h2>E o Exercício Físico?</h2>
+    <div class="quadros">
+
+        <div class="quadro">
+            <h3>Melhora o Humor</h3>
+            <p>A prática de exercícios físicos libera endorfina e serotonina, hormônios essênciais para a manutenção do bem estar e responsável pela sensação de prazer.</p>
+        </div>
+
+        <div class="quadro">
+            <h3>Melhora a Qualidade do Sono</h3>
+            <p>Atívidades físicas elevam a temperatura corporal, produzindo efeitos calmantes na mente. Assim, é facil livrá-la de oensamentos acerca do dia seguinte e preocupações desnecessárias. Uma mente calma facilita a chegada do sono.</p>
+        </div>
+
+        <div class="quadro">
+            <h3>Reduzir o Estresse</h3>
+            <p>Muitas pessoas afirmam fazer academia justamente para se livrar do estresse acumulado ao longo do dia ou da semana corrida de trabalho. O efeito positivo é sentido ao nível físico e mental. A tensão dos músculos é liberada, promovendo uma sensação agradável de relaxamento.</p>
+        </div>
+
+        <div class="quadro">
+            <h3>Melhora a Concentração</h3>
+            <p>As mesmas endorfinas que ajudam você a se sentir bem e livre de preovupações também ajudam o seu cérebro a funcionar melhor. Sendo assim, a sua concentração, memória e raciocínio lógico são aprimorados.</p>
+        </div>
+
+        <div class="quadro">
+            <h3>Reduz Dores</h3>
+            <p>Sabe por quê você sente dores musculares inexplicáveis em períodos prolongados de sedentarismo?</p>
+            <p> A falta de seratonina no organismo aumenta a sensibilidade à dor.</p>
+        </div>
+
+        <div class="quadro">
+            <h3>Controla a Ansiêdade</h3>
+            <p>O controle da ansiedade também está relacionado à produção de serotonina. Além do bem-estar prolongado, você se sente calmo e relaxado.</p>
+            <p>Seus pensamentos deixam de ser desconexos e acelerados, permitindo que sua mente tenha um merecido descanso.</p>
+        </div>
+
+        <div class="quadro">
+            <h3>Previne a Depressão</h3>
+            <p>Outro benefício notável dos exercícios físicos para a saúde mental é a prevenção e comvate da depressão.</p>
+            <p>A explicação é a mesma para o controle da ansiedade! A liberação de serotonina e endorfina no cérebro combate os pensamentos negativos, mau humor e falta de perspectiva.</p>    
+        </div>
+
+        <div class="quadro">
+            <h3>Fortalece a autoestima</h3>
+            <p>À medida que mudanças físicas começam a ser notadas, como fortalecimento muscular, grande parte das pessoas começam a ficar mais motivadas para se exercitar.</p>
+            <p>A satisfação com a aparência física aliada a mentalidade positiva, também provocada por exercícios físicos rotineiros, <strong>fortalece a autoestima e o amor-próprio</strong>. </p>
+        </div>
+
+        <div class="quadro">
+            <h3>Combate o Desânimo</h3>
+            <p>Você adiquire mais disposição, disciplina e vontade para interagir com as pessoas, concluir afazeres domésticos, ser produtivo no trabalho e correr atrás de seus objetivos de vida.</p>
+        </div>
+
+        <div class="quadro">
+            <h3>Ameniza os sintomas de condições mentais</h3>
+            <p>Os benefícios dos exercicios físicos não são apenas sentidos por pessoas depressivas e ansiosas.</p>
+            <p>Sintomas de condições de saúde mental, como transtorno de déficit de atenção e hiperatividade (TDAH), transtornos de personalidades, síndrome do pânico, entre outros, também são amenizados.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- Missao e valor-->
+<div class="empresa">
+    <h2>Nossos três Pilares</h2>
+    <div class="missao">
+        <!-- representa o propósito pelo qual você trabalha-->
+        <h2>Missão</h2>
+        <p>Nossa missão é permitir que as pessoas conhecam e alcancem uma melhor qualidade de vida com saúde e alegria.</p>
+    </div>
+    
+    <div class="visao">
+        <!-- princípios comportamentais da empresa e de todos que fazem parte-->
+        <h2>Visão</h2>
+        <ol class="visaool">
+            <li>Integridade e Honestidade</li>
+            <li>Atitude Crítica, dedicação para com a qualidade e melhoramento pessoal</li>
+            <li>Responsabilidade Social e Ambiental</li>
+            <li>Saúde e Bem-Estar</li>
+        </ol>
+    </div>
+
+    <div class="valores">
+        <!-- você sabe quem é e onde está, mas já não sabe a onde quer chegar?-->
+        <h2>Valores</h2>
+        <p>Nossa vísão estratégica e se tornar a loja número 1 de produtos naturais e suplementos da região do Triângulo Mineiro.</p>
+    </div>    
+</div>
+
+<!-- contato e maps -->
+<br>
+<br>
+<div class="contato">
+    <h2>Entre em Contato ou nos visite presencialmente</h2>
+    <div class="tabela">
+        <div class="contato-sac">
+        <h3>Central de Atendimento (SAC)</h3>
+        <p><strong>Telefone:</strong> (11)91234-5678</p>
+        <p><strong>Email:</strong>naturainloco@gmail.com</p>
+        <p><strong>Horário de Atendimento:</strong>seg a sex das 08:00 até as 18:00</p>    
+        </div>
+
+        <div class="contato-maps">
+            <h3>Nosso Local</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3748.68364527914!2d-48.92548328820786!3d-20.021787941097628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDAxJzE4LjUiUyA0OMKwNTUnMjIuNSJX!5e0!3m2!1spt-BR!2sbr!4v1698072309526!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>

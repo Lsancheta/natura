@@ -1,0 +1,52 @@
+/* Estilo do submenu horizontal de produtos */
+.submenu-horizontal {
+    display: flex;
+    justify-content: space-around; /* Para distribuir os links igualmente na horizontal */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .submenu-horizontal a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .submenu-horizontal a:hover { /* Efeito de sublinhado ao passar o mouse */
+    background-color: #f2f2f2;
+    color: #555;
+  }
+
+  .submenu-horizontal button{
+    background: none;
+    border: none;
+    color:#fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Estilo para a mensagem de estoque indisponível */
+.estoque-indisponivel {
+  color: red; /* Cor vermelha para indicar que está fora de estoque */
+  font-weight: bold; /* Texto em negrito para chamar a atenção */
+}
+
+.produto-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.produto-card{
+  border: 2px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.produto-card img{
+  max-width: 100%;
+  height: auto;
+}

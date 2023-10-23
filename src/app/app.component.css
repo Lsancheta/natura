@@ -1,0 +1,50 @@
+/* Estilo do menu lateral */
+.sidebar {
+  width: 150px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding-top: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background-color: #555;
+}
+
+/* Estilo do conteúdo principal */
+.content {
+  margin-left: 250px; /* Ajuste para a largura do menu lateral */
+  padding: 20px;
+}
+
+/* app.component.css */
+
+/* Estilize o contêiner principal */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o conteúdo mínimo seja 100% da altura da tela */
+}
+
+/* Centralize verticalmente o rodapé */
+app-footer {
+  margin-top: auto;
+}

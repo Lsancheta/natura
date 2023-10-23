@@ -1,0 +1,6 @@
+/* Estilo para a mensagem de estoque indisponível */
+.estoque-indisponivel {
+    color: red; /* Cor vermelha para indicar que está fora de estoque */
+    font-weight: bold; /* Texto em negrito para chamar a atenção */
+  }
+  

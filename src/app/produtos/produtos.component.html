@@ -1,0 +1,21 @@
+<div class="produtos-container">
+    <h2>Produtos</h2>
+    <div class="submenu-horizontal">
+        <button (click)="filtrarPorTipo('todos')">Mostrar Todos</button>
+        <button (click)="filtrarPorTipo('natural')">Natural</button>
+        <button (click)="filtrarPorTipo('suplemento')">Suplemento</button>
+    </div>
+    <div class="produto-grid">
+        <div *ngFor="let produto of produtosFiltrados" class="produto-card">
+            <h3><a [routerLink]="['/produtos',produto.id]">{{ produto.nome }}</a></h3>
+            <p>Preço: R$ {{ produto.preco }}</p>
+            <a [routerLink]="['/produtos',produto.id]">
+                <img [src]="produto.imagem" alt="{{produto.nome}}">
+            </a>
+            
+            <!-- Outras informações do produto -->
+            <p *ngIf="!produto.estoque" class="estoque-indisponivel">Produto fora de Estoque!</p>    
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,81 @@
+/* Estilo para a página de detalhes do produto */
+.detalhes-produto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .duas-colunas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  .coluna-imagem {
+    flex: 1;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .imagem-produto {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Efeito de transição */
+  }
+  
+  .imagem-produto:hover {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+  }
+  
+  .coluna-info {
+    flex: 1;
+    margin-left: 20px;
+    padding: 10px;
+    border: 0px solid #ccc;
+  }
+  
+  .coluna-informacoes {
+    flex: 1;
+    margin-right: 0px;
+    background-color:lightgray;
+    
+  }
+  
+  /* Estilos para o submenu horizontal (você pode estilizá-lo conforme necessário) */
+  .submenu-horizontal {
+    /* Estilos para o submenu */
+  }
+  
+  /* Estilo para a mensagem de estoque indisponível */
+  .estoque-indisponivel {
+    color: red; /* Cor vermelha para indicar que está fora de estoque */
+    font-weight: bold; /* Texto em negrito para chamar a atenção */
+  }
+
+
+  .coluna-informacoes ul {
+    list-style: none; /* Remover marcadores padrão da lista */
+    padding-left: 0; /* Remover recuo à esquerda da lista */
+  }
+  
+  .coluna-informacoes li {
+    margin-bottom: 8px; /* Espaçamento entre os itens da lista */
+    position: relative; /* Para criar um pseudo-elemento (::before) */
+    padding-left: 20px; /* Espaço à esquerda para os pontos */
+    
+  }
+  
+  .coluna-informacoes li::before {
+    content: ""; /* Conteúdo do pseudo-elemento (ponto) */
+    position: absolute;
+    left: 0;
+  }
+
+.label {
+  color:black;
+  font-weight:bold;
+}
